@@ -22,4 +22,4 @@ COPY . /var/www/html/
 
 #docker rm $(docker ps -a -q)  remove stopped containers
 #docker stop $(docker ps -a -q) stop running containers
-
+#docker rmi $(docker images -q) -f remove all existing images
