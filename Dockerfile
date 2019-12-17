@@ -11,6 +11,7 @@ COPY . /var/www/html/
 
 
 # Run the command to create a volume on your machine for data-persistence even when the container is deleted.
+# This is incase you ever stop the component locally i.e docker compose down. It will still persist in volume.
 # docker volume create my-vol(This is the name of your volume)
 
 # Run the below file to start your wordpress image linking to your volume.
